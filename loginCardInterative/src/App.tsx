@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="max-w-[1344px] h-[100%] flex flex-row justify-between items-center self-center mx-32">  
-      <div className="flex flex-col gap-10 w-[540px]">
+      <div className="flex flex-col gap-20 w-[540px]">
         <img className="w-[440px]" src="/bg-card-front.png" alt="Front of card"/>
         <img className="w-[440px] self-end" src="/bg-card-back.png" alt="Back of card"/>
       </div>
