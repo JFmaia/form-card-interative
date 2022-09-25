@@ -5,11 +5,12 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="max-w-[1344px] h-[100%] flex flex-row justify-between items-center self-center mx-40">  
-      <div>
-
+    <div className="max-w-[1344px] h-[100%] flex flex-row justify-between items-center self-center mx-32">  
+      <div className="flex flex-col gap-10 w-[540px]">
+        <img className="w-[440px]" src="/bg-card-front.png" alt="Front of card"/>
+        <img className="w-[440px] self-end" src="/bg-card-back.png" alt="Back of card"/>
       </div>
-      <div className="flex flex-col w-[440px] gap-2">
+      <div className="flex flex-col w-[400px] gap-2">
         <div>
           <span className="font-medium text-[#21092F]">CARDHOLDER NAME</span>
           <input className="w-[100%] placeholder:italic placeholder:#8E8593 p-3 bg-white text-[#21092F] border border-#DEDDDF  rounded-lg mt-1" type="text" placeholder="e.g. Jane Appleseed"/>
