@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="max-w-[1344px] h-[100%] flex flex-row justify-between items-center self-center mx-40">  
       <div>
-        
+
       </div>
       <div className="flex flex-col w-[440px] gap-2">
         <div>
@@ -21,7 +21,7 @@ function App() {
         <div className="w-[100%] flex flex-row items-center">
           <div className="w-[50%] flex flex-col">
             <span className="font-medium text-[#21092F]">EXP. DATE (MM/YY)</span>
-            <div className="flex flex-row gap-1 items-center mt-1">
+            <div className="flex flex-row gap-2 items-center mt-1">
               <input className="w-20 placeholder:italic placeholder:##8E8593 p-3 bg-white text-[#21092F] border border-#DEDDDF rounded-lg" type="text" placeholder="MM"/>
               <input className="w-20 placeholder:italic placeholder:##8E8593 p-3 bg-white text-[#21092F] border border-#DEDDDF rounded-lg" type="text" placeholder="YY"/>
             </div>
