@@ -12,17 +12,21 @@ function App() {
         .string()
         .required("Can't be blank"),
     cardNumbe: yup
-        .number()
-        .required("Can't be blank"),
+        .number().required("Can't be blank")
+        .positive("Please enter only positive numbers!")
+        .integer("This field only accepts integers!"),
     month: yup
-        .number()
-        .required("Can't be blank"),
+        .number().required("Can't be blank")
+        .positive("Please enter only positive numbers")
+        .integer("This field only accepts integers!"),
     year: yup
-        .number()
-        .required("Can't be blank"),
+        .number().required("Can't be blank")
+        .positive("Please enter only positive numbers!")
+        .integer("This field only accepts integers!"),
     cvc: yup
-        .number()
-        .required("Can't be blank")
+        .number().required("Can't be blank")
+        .positive("Please enter only positive numbers!")
+        .integer("This field only accepts integers!")
   });
 
   return (
@@ -71,7 +75,7 @@ function App() {
               <span className="font-medium text-[#21092F]">CARD NUMBER</span>
               <input 
                 className="w-[100%] placeholder:italic placeholder:##8E8593 p-3 bg-white text-[#21092F] border border-#DEDDDF rounded-lg mt-1" 
-                type="text" 
+                type="number" 
                 placeholder="e.g. 1234 5678 9123 0000"
                 name="cardNumbe"
                 onChange={handleChange}
@@ -86,7 +90,7 @@ function App() {
                 <span className="font-medium text-[#21092F]">EXP. DATE (MM/YY)</span>
                 <div className="flex flex-row gap-2 items-center mt-1">
                   <input className="w-20 placeholder:italic placeholder:##8E8593 p-3 bg-white text-[#21092F] border border-#DEDDDF rounded-lg" 
-                    type="text" 
+                    type="number" 
                     placeholder="MM"
                     name="month"
                     onChange={handleChange}
@@ -94,7 +98,7 @@ function App() {
                     value={values.month}
                   />
                   <input className="w-20 placeholder:italic placeholder:##8E8593 p-3 bg-white text-[#21092F] border border-#DEDDDF rounded-lg" 
-                    type="text" 
+                    type="number" 
                     placeholder="YY"
                     name="year"
                     onChange={handleChange}
